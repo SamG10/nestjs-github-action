@@ -3,7 +3,7 @@ name: Run and Check Tests
 on:
   push:
     branches:
-      - develop
+      - master
 
 jobs:
   run-tests:
