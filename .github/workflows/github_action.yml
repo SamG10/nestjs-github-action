@@ -18,11 +18,11 @@ jobs:
         run: npm install
 
       - name: Run NestJS tests
-        id: run-tests
+        id: run-testsj
         run: npm run test
 
     outputs:
-      test-result: 'failed'
+      test-result: ${{ steps.run-testsj.outputs.outcome }}
 
   check-tests:
     name: Check tests
