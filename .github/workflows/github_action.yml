@@ -22,7 +22,7 @@ jobs:
         run: npm run test
 
     outputs:
-      test-result: ${{ steps.run-tests.outputs.test-result }}
+      test-result: ${{ steps.run-tests.outputs.outcome }}
 
   check-tests:
     name: Check tests
