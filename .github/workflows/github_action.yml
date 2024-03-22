@@ -20,6 +20,7 @@ jobs:
       - name: Run NestJS tests
         id: run-tests
         run: npm run test
+        continue-on-error: true
 
     outputs:
       test-result: ${{ steps.run-tests.outcome }}
